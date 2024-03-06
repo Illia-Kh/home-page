@@ -1,1 +1,95 @@
+.header {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Изменяем направление на вертикальное */
+    align-items: center; /* Центрируем содержимое по горизонтали */
+    margin-bottom: 20px;
+}
 
+h1 {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-links {
+    display: flex;
+    width: 100%; /* Заголовок растягивается на всю ширину для правильного центрирования */
+    justify-content: space-around; /* Располагаем элементы равномерно */
+}
+
+.nav-links div {
+    width: 50%; /* Делаем каждый блок шириной в половину контейнера */
+    display: flex;
+    justify-content: center; /* Центрируем ссылки внутри блоков */
+}
+
+.what-we-do, .how-we-do-it {
+    text-align: center; /* Центрирование текста ссылок */
+}
+
+
+
+.container1 {
+    display: flex;
+}
+
+.container1-left-column {
+    flex: 1; /* Левая колонка занимает 1/3 ширины */
+    padding: 20px;
+}
+
+.container1-right-column {
+    flex: 2; /* Правая колонка занимает 2/3 ширины */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Располагаем содержимое правой колонки вертикально */
+}
+.container2 {
+    display: flex;
+}
+
+.container2-left-column {
+    flex: 1; /* Левая колонка занимает 1/3 ширины */
+    padding: 20px;
+}
+
+.container2-right-column {
+    flex: 2; /* Правая колонка занимает 2/3 ширины */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Располагаем содержимое правой колонки вертикально */
+}
+/* Для экранов меньшего размера, где 20% может быть слишком мало */
+@media (max-width: 600px) {
+    h1 {
+        width: 80%; /* Увеличиваем ширину заголовка на маленьких экранах */
+    }
+}
+
+.social-icons {
+    position: fixed; /* Фиксируем позицию иконок */
+    bottom: 20px; /* Отступ снизу */
+    right: 20px; /* Отступ справа */
+    display: flex; /* Располагаем иконки в ряд */
+    gap: 10px; /* Добавляем промежуток между иконками */
+}
+
+.social-icons a {
+    display: block;
+    width: 40px; /* Ширина каждой иконки */
+    height: 40px; /* Высота каждой иконки */
+    background-color: #f0f0f0; /* Фоновый цвет иконки, замените на свои изображения */
+    text-align: center; /* Центрирование текста/изображения иконки */
+    line-height: 40px; /* Высота строки для вертикального центрирования текста в иконке */
+    text-decoration: none; /* Убираем подчеркивание текста ссылки */
+    color: black; /* Цвет текста, если используете текст вместо изображений */
+    border-radius: 4px; /* Добавляем скругление углов */
+}
+
+/* Дополнительно: Стилизация при наведении на иконку */
+.social-icons a:hover {
+    background-color: #cccccc;
+}
